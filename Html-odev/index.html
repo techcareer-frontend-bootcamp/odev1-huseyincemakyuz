@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html İskelet Yapısı</title>
+    <style type="text/css">
+        body {
+          max-width: 1200px;
+          margin: auto;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+        header, nav, section, article, footer {
+         border: 1px solid grey;
+         margin: 25px;
+         padding: 10px;
+        }
+   
+        nav ul li,
+        nav ol li {
+          display: inline;
+         }
+
+         #footer {
+            text-align: right ;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">HTML İSKELET YAPISI</h1>
+    </header>
+        
+        <!-- Menü -->
+    <nav class="text-center">
+        <ul>  
+            <li><a href="">Anasayfa</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">Kalite</a></li>
+            <li><a href="">İletişim</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <!-- Ünlü Ülkeler -->
+        <section>
+            <h1 class="text-center">Ünlü Ülkeler</h2>
+            <article>
+                <h1>Türkiye</h1>
+                <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> <i>Consectetur dolores est ab itaque facere maiores reprehenderit odio dicta quia sapiente commodi velit</i>, <u>minus error cum, ipsam reiciendis nesciunt non maxime.</u></p>
+            </article>
+
+            <article>
+                <h1>Azerbaycan</h1>
+                <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> <i>Consectetur dolores est ab itaque facere maiores reprehenderit odio dicta quia sapiente commodi velit</i>, <u>minus error cum, ipsam reiciendis nesciunt non maxime.</u></p>
+            </article>
+        </section>
+        
+        <!-- Contact -->
+        <section class="text-center">
+            <h1>Contact</h2>
+           
+            <form action="">
+                <label for="">Kullanıcı Adı:</label>
+                <input type="text" placeholder="Zorunlu Alan" required> 
+
+                <label for="">Mail:</label>
+                <input type="email" placeholder="Zorunlu Alan" required> 
+
+                <label for="">Konu:</label>
+                <input type="text" placeholder="Zorunlu Alan" required> 
+
+                <label for="checkbox">Konu:</label>
+                <input type="checkbox" id="checkbox"> 
+
+                <button type="reset">Temizle</button>
+                <button type="submit">Gönder</button>
+            </form> 
+        </section>
+    </main>
+
+    <footer >
+       <p id="footer">@ 2022 Tüm hakları saklıdır</p>
+    </footer>
+
+
+    
+</body>
+</html>
